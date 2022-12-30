@@ -11,7 +11,8 @@ window.addEventListener('keydown', (event) => {
     console.log ("DING DING");
     jingle.play();
     correct = false;
-    secret.innerHTML =
+    secret.innerHTML =`<img src="logo.png" class="logo"></img>`
+    document.getElementById("ship").src = "after.png"
   }
   console.log(pressed.join(''))
 });

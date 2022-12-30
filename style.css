@@ -55,3 +55,19 @@ body,html {
 .enter {
   width: 10rem;
 }
+
+.image-container {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 1000px;
+  margin-top: 200px;
+}
+
+#ship {
+  width: 1440px;
+  margin-top: 10px;
+}
