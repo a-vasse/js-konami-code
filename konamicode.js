@@ -3,6 +3,7 @@ const secretCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeft
 let correct = true;
 
 window.addEventListener('keydown', (event) => {
+  const secret = document.querySelector('.secret');
   pressed.push(event.key);
   pressed.splice(-secretCode.length -1, pressed.length - secretCode.length)
   if (pressed.join('').includes(secretCode) && correct) {
@@ -10,6 +11,7 @@ window.addEventListener('keydown', (event) => {
     console.log ("DING DING");
     jingle.play();
     correct = false;
+    secret.innerHTML =
   }
   console.log(pressed.join(''))
 });
