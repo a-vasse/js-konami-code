@@ -63,11 +63,19 @@ body,html {
 }
 
 .logo {
+  position: fixed;
   width: 1000px;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
+.secret {
+  display: flex;
+  justify-content: center;
+  flex:1;
+  width:100%;
+}
 #ship {
+  position: fixed;
   width: 1440px;
-  margin-top: 10px;
+  bottom: 20px;
 }
